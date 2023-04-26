@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/9cdb8920a4.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+  <title>BuzzerBeats</title>
+</head>
+<body>
+  <div class="right-nav">
+    <div class="Sign-In">
+      <button>Sign in</button>
+    </div>
+    <div class="Menu-Button" >
+      <button id="menu-btn" class="fa fa-bars"></button>
+    </div>
+  </div>
+  <hr>
+  <p1>Channels</p1> 
+  <div class="channel-list-header"></div>
+  <div class="channel-list">
+    <ul>
+      <li>
+        <a href="Live TV Page.html">BT Sports 1</a>
+      </li>
+      <li class="channel" data-stream="https://tvnow.best/api/stream/gihebaj657@crtsec.com/205165/livetv.epg/lvupvmnk.ss.m3u8">
+        <a href="#">Sky Sports Football</a>
+      </li>
+      <li class="channel" data-stream="https://tvnow.best/api/stream/gihebaj657@crtsec.com/205165/livetv.epg/diiefbxx.ss.m3u8">
+        <a href="#">Sky Sports Premier League</a>
+      </li>
+      <li class="channel" data-stream="https://tvnow.best/api/stream/gihebaj657@crtsec.com/205165/livetv.epg/eppvjpkd.ss.m3u8">
+        <a href="#">Sky Sports Main Event</a>
+      </li>
+      <li class="channel" data-stream="https://tvnow.best/api/stream/gihebaj657@crtsec.com/205165/livetv.epg/fdghodsfgh.ss.m3u8">
+        <a href="#">Sky Sports News</a>
+      </li>
+      <li class="channel" data-stream="https://tvnow.best/api/stream/gihebaj657@crtsec.com/205165/livetv.epg/bt.sport.2.uk.m3u8">
+        <a href="#">BT Sports 2</a>
+      </li>     
+      <li class="channel" data-stream="https://tvnow.best/api/stream/gihebaj657@crtsec.com/205165/livetv.epg/bt.sport.3.uk.m3u8">
+        <a href="#">BT Sports 3</a>
+      </li>
+      <li class="channel" data-stream="https://tvnow.best/api/stream/gihebaj657@crtsec.com/205165/livetv.epg/bein.sports.1.us.m3u8">
+        <a href="#">Bein Sports USA</a>
+      </li>
+      <li class="channel" data-stream="https://tvnow.best/api/stream/gihebaj657@crtsec.com/205165/livetv.epg/mutv.uk.m3u8">
+        <a href="#">MUTV</a>
+      </li>
+      <li class="channel" data-stream="https://tvnow.best/api/stream/gihebaj657@crtsec.com
+.fa-searchengin{
+color:#f9f9f9;
+font-size:16px;
+position:absolute;
+top:24px;
+left:1260px;
+}
+/* Channel List */
+.channel-list-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 200px;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 50px;
+  width: 80%;
+  background-color: #825D9F;
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.channel-list {
+  margin-top: 0px;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 550px;
+  width: 80%;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  padding: 20px 20px;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.channel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.channel:hover {
+  background-color: #f2f2f2;
+}
+
+/* Clappr player */
+#myElement {
+  height: 500px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 950px) {
+  /* Reduce the width of the sidebar menu */
+  nav.sidebar-menu {
+    width: 75px;
+    left: -75px;
+  }
+
+  /* Adjust the icon positions */
+  .HomeIcon{
+    top:10%;
+    left: 2px;
+  }
+
+  .TVIcon{
+    top:7%;
+    left: 3px;
+  }
+
+  .HighlightsIcon{
+    top:4%;
+    left: 3px;
+  }
+
+  .SavedIcon{
+    top:1%;
+    left: 1px;
+  }
+
+  .SettingsIcon{
+    top:-2%;
+    left: 3px;
+  }
+
+  /* Adjust the position of the sign in button */
+  .Sign-In button {
+    right: -940px;
+  }
+
+  /* Adjust the position of the menu button */
+  .Menu-Button {
+    left: 10px;
+  }
+
+  /* Adjust the position of the search icon */
+  .fa-magnifying-glass {
+    left: 1075px;
+  }
+
+  /* Adjust the position of the search engine icon */
+  .fa-searchengin {
+    left: 1110px;
+  }
+
+  /* Adjust the position of the Clappr player */
+  #myElement {
+    height: 300px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Reduce the width of the sidebar menu */
+  nav.sidebar-menu {
+    width: 50px;
+    left: -50px;
+  }
+
+  /* Adjust the icon positions */
+  .HomeIcon{
+    top:6%;
+    left: 2
+  .myElement {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: black;
+  }
+
+  /* Channel List */
+  .channel-list-header {
+    position:absolute;
+    top: 200px;
+    left: 8%;
+    width: 10%;
+    height: 100px;
+    background-color: #825D9F;
+    border-color: #825D9F;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 10px;
+    padding-top: 25px;
+  }
+
+  .channel-list {
+    position: absolute;
+    top: 270px;
+    left: 8%;
+    width: 10%;
+    height: 400px;
+    overflow: auto;
+  }
+
+  .channel-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .channel-list li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  .channel-list li a:hover {
+    background-color: #f9f9f9;
+    color: #825D9F;
+  }
+
+  .channel {
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #825D9F;
+    cursor: pointer;
+  }
+
+  .channel:hover {
+    background-color: #f9f9f9;
+    color: #825D9F;
+  }
+</style>
+
+
+<!-- JavaScript -->
+<script>
+  
+    document.getElementById("menu-btn").addEventListener("click", function() {
+    document.querySelector("nav.sidebar-menu").classList.toggle("sidebar-menu-expanded");
+    document.body.classList.toggle("sidebar-menu-collapsed");
+      });
+
+
+</script>
+  
+<script>
+
+    // var player = jwplayer("myElement").setup({
+    //     // file: "https://tvnow.best/api/stream/gihebaj657@crtsec.com/205165/livetv.epg/fdghodsfgh.ss.m3u8"
+    //     file: "https://tvnow.best/api/stream/gihebaj657@crtsec.com/205165/livetv.epg/bt.sport.1.uk.m3u8"
+    //   // other player settings
+    // });
+
+    //  var player = Clappr("myElement").setup({
+    //     // file: "https://tvnow.best/api/stream/gihebaj657@crtsec.com/205165/livetv.epg/fdghodsfgh.ss.m3u8"
+    //     file: "https://tvnow.best/api/stream/gihebaj657@crtsec.com/205165/livetv.epg/bt.sport.1.uk.m3u8"
+    //   // other player settings
+    // });
+
+    
+       var channels = document.querySelectorAll(".channel");
+       channels.forEach(function(channel) {
+        channel.addEventListener("click", function() {
+           var stream = this.getAttribute("data-stream");
+            player.load({ file: stream });
+            player.play();
+      });
+    });
+  
+
+    
+</script>
+
